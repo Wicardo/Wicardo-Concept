@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Wicardo | Discover cards</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+     <script src="js/jquery.min.js"></script>
+     <!-- Custom Theme files -->
+    <link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+     <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts/web/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!--start-top-nav-script-->
+    <script>
+      $(function() {
+        var pull    = $('#pull');
+          menu    = $('nav ul');
+          menuHeight  = menu.height();
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+        $(window).resize(function(){
+          var w = $(window).width();
+          if(w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+      });
+    </script>
+    <!--//End-top-nav-script-->
+  <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+</head>
+  <body>
+        <div  id="top" class="main_content">
+          <ul class="rslides callbacks">
+            <li>
+              <img src="images/preview-4.jpg" alt="">
+              <div class="caption row">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-offset-2 col-lg-8">
+                      <h2>Discover professionals &amp; local</h2>
+                      <h3>businesses through personal connections</h3>
+                      <p>Get geniune feedback from real customers,</p>
+                      <p> who are part of your personal work</p>
+                      <form action="/invitation/requestInvitation" class="form-inline newsletter" data-ajax="true" data-ajax-begin="global.newsletterLoad" data-ajax-method="POST" data-ajax-success="global.newsletterSuccess" id="save" method="post">                        
+                        <div class="form-group">
+                            <input class="form-control" id="txtNewsletter" name="email" placeholder="Enter your email address to request invitation">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default">REQUEST INVITATION</button>
+                        </div>
+                      </form>                
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="clear"> </div>
+    <!-----start-conatiner-->
+    <div class="container">
+      <!-----start-header-->
+      <div class="header">
+        <div class="container">
+        <div class="logo">
+          <a href="#">Wicardo</a>
+        </div>
+        <!----start-top-nav-->
+         <nav class="top-nav">
+          <ul class="top-nav">
+            <li class="active"><a href="#hello" class="scroll">Home</a></li>
+            <li class="page-scroll"><a href="#over" class="scroll">About us</a></li>
+            <li class="page-scroll"><a href="/careers" class="scroll">Careers</a></li>
+          </ul>
+          <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+          </nav>
+        
+        <div class="clear"> </div>
+      </div>
+      <!-----//End-header-->
+      </div>
+      <!-----start-top-header-->
+    </div>
+    </div>
+    <!--start-features-->
+    <div id="over" class="features text-center">
+      <div class="container">
+        <h2>How it works ?</h2>
+        <!---- start-features-grids-->
+          <div class="features-grids text-center">
+            <div class="col-md-4 features-grid">
+              <span> </span>
+              <h3><a href="#">Discover </a></h3>
+              <p>ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor. </p>
+            </div>
+            <div class="col-md-4 features-grid">
+              <span class="t-icon2"> </span>
+              <h3><a href="#">Privacy</a></h3>
+              <p>ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor. </p>
+            </div>
+            <div class="col-md-4 features-grid">
+              <span class="t-icon2"> </span>
+              <h3><a href="#">Rewards</a></h3>
+              <p>ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor. </p>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        <!---- //End-features-grids------>
+      </div>
+    </div>
+    <!-----//End-features-->
+    <!-----start-Share instantly-->
+    <div class="feature-section feature-1" style='background:#262626;'>
+      <div class="container">
+        <div class="col-md-5 feature-section-image image-1">
+          <span> </span>
+        </div>
+        <div class="col-md-7 feature-section-content">
+          <h3>Discover</h3>
+          <p class="head-para">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="feature-section feature-2">
+      <div class="container">
+        <div class="col-md-7 feature-section-content">
+          <h3>Privacy</h3>
+          <p class="head-para">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+        </div>
+        <div class="col-md-5 feature-section-image image-2">
+          <span> </span>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="feature-section feature-3" style='background:#262626;'>
+      <div class="container">
+        <div class="col-md-5 feature-section-image image-3">
+          <span> </span>
+        </div>
+        <div class="col-md-7 feature-section-content">
+          <h3>Rewards</h3>
+          <p class="head-para">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+        </div>
+        <div class="clearfix"> </div>
+      </div>
+    </div>
+    <div class="clearfix"> </div>
+    <!-----//End-Share instantly-->
+    <!-----start-footer-->
+    <footer>      
+      <div class="footer-card" id="footer-card">
+        <div class="footer">
+          <div class="">
+            <div class="desc">
+            © 2016 Wicardo Solutions Pvt. Ltd.
+            </div>
+          </div>
+        </div>
+      </div>      
+    </footer>
+    <!--//End-footer-->
+    <!--//End-conatiner-->
+  </body>
+</html>
+
